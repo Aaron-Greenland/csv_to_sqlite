@@ -1,0 +1,160 @@
+django_migrations
+1,contenttypes,0001_initial,2024-01-06 22:41:43.832738
+2,auth,0001_initial,2024-01-06 22:41:44.356927
+3,admin,0001_initial,2024-01-06 22:41:44.898879
+4,admin,0002_logentry_remove_auto_add,2024-01-06 22:41:45.033206
+5,admin,0003_logentry_add_action_flag_choices,2024-01-06 22:41:45.421322
+6,contenttypes,0002_remove_content_type_name,2024-01-06 22:41:45.792083
+7,auth,0002_alter_permission_name_max_length,2024-01-06 22:41:45.947446
+8,auth,0003_alter_user_email_max_length,2024-01-06 22:41:46.081745
+9,auth,0004_alter_user_username_opts,2024-01-06 22:41:46.486725
+10,auth,0005_alter_user_last_login_null,2024-01-06 22:41:46.900744
+11,auth,0006_require_contenttypes_0002,2024-01-06 22:41:47.247706
+12,auth,0007_alter_validators_add_error_messages,2024-01-06 22:41:47.479323
+13,auth,0008_alter_user_username_max_length,2024-01-06 22:41:47.605006
+14,auth,0009_alter_user_last_name_max_length,2024-01-06 22:41:47.983297
+15,auth,0010_alter_group_name_max_length,2024-01-06 22:41:48.114203
+16,auth,0011_update_proxy_permissions,2024-01-06 22:41:48.236752
+17,auth,0012_alter_user_first_name_max_length,2024-01-06 22:41:48.640441
+18,sessions,0001_initial,2024-01-06 22:41:49.139400
+19,Monitoring,0001_initial,2024-01-06 22:45:08.343243
+20,Monitoring,0002_alter_member_firstname_alter_member_lastname,2024-01-07 17:08:25.682454
+21,frontend,0001_initial,2024-03-06 19:02:58.653524
+22,frontend,0002_alter_temp_table,2024-03-06 23:44:41.626074
+23,frontend,0003_alter_temp_options,2024-03-06 23:44:41.660836
+--------------------------------------------------
+sqlite_sequence
+django_migrations,23
+django_admin_log,0
+django_content_type,8
+auth_permission,32
+auth_group,0
+auth_user,0
+Monitoring_member,2
+new_air_readings,22
+--------------------------------------------------
+auth_group_permissions
+--------------------------------------------------
+auth_user_groups
+--------------------------------------------------
+auth_user_user_permissions
+--------------------------------------------------
+django_admin_log
+--------------------------------------------------
+django_content_type
+1,admin,logentry
+2,auth,permission
+3,auth,group
+4,auth,user
+5,contenttypes,contenttype
+6,sessions,session
+7,Monitoring,member
+8,frontend,temp
+--------------------------------------------------
+auth_permission
+1,1,add_logentry,Can add log entry
+2,1,change_logentry,Can change log entry
+3,1,delete_logentry,Can delete log entry
+4,1,view_logentry,Can view log entry
+5,2,add_permission,Can add permission
+6,2,change_permission,Can change permission
+7,2,delete_permission,Can delete permission
+8,2,view_permission,Can view permission
+9,3,add_group,Can add group
+10,3,change_group,Can change group
+11,3,delete_group,Can delete group
+12,3,view_group,Can view group
+13,4,add_user,Can add user
+14,4,change_user,Can change user
+15,4,delete_user,Can delete user
+16,4,view_user,Can view user
+17,5,add_contenttype,Can add content type
+18,5,change_contenttype,Can change content type
+19,5,delete_contenttype,Can delete content type
+20,5,view_contenttype,Can view content type
+21,6,add_session,Can add session
+22,6,change_session,Can change session
+23,6,delete_session,Can delete session
+24,6,view_session,Can view session
+25,7,add_member,Can add member
+26,7,change_member,Can change member
+27,7,delete_member,Can delete member
+28,7,view_member,Can view member
+29,8,add_temp,Can add temp
+30,8,change_temp,Can change temp
+31,8,delete_temp,Can delete temp
+32,8,view_temp,Can view temp
+--------------------------------------------------
+auth_group
+--------------------------------------------------
+auth_user
+--------------------------------------------------
+django_session
+--------------------------------------------------
+Monitoring_member
+1,Jane,Doe
+2,John,Doe
+--------------------------------------------------
+air_readings
+20.01,22.0
+24.02,45.54
+20.01,45.54
+24.0,40.0
+24.0,39.0
+24.0,39.0
+24.0,40.0
+25.0,39.0
+24.0,40.0
+24.0,40.0
+24.0,40.0
+--------------------------------------------------
+air_readings_detailed
+4,2024-02-24,11:57:31.136039,25.0,40.0
+4,2024-02-24,11:57:35.677910,25.0,39.0
+4,2024-02-24,11:57:40.223301,25.0,38.0
+4,2024-02-24,12:01:17.922681,25.0,38.0
+4,2024-02-24,12:01:42.939290,25.0,39.0
+4,2024-02-24,12:01:52.545479,25.0,39.0
+4,2024-02-24,12:07:18.875320,25.0,39.0
+4,2024-02-24,15:37:24.744957,25.0,39.0
+4,2024-02-24,15:37:31.016084,25.0,38.0
+4,2024-02-24,15:37:34.356793,25.0,38.0
+4,2024-02-24,15:37:38.097637,25.0,39.0
+4,2024-03-05,18:50:55.195593,22.0,35.0
+4,2024-03-05,18:50:57.953220,22.0,34.0
+4,2024-03-05,18:50:59.766627,23.0,34.0
+4,2024-03-05,19:34:50.739850,21.0,37.0
+4,2024-03-05,23:04:53.987553,21.0,35.0
+4,2024-03-05,23:05:00.352009,21.0,35.0
+4,2024-03-05,23:05:03.612509,21.0,35.0
+4,2024-03-05,23:05:04.901552,21.0,35.0
+4,2024-03-05,23:05:08.177612,21.0,35.0
+4,2024-03-05,23:05:09.449749,21.0,34.0
+4,2024-03-05,23:22:45.145946,21.0,35.0
+4,2024-03-05,23:23:14.608729,21.0,35.0
+4,2024-03-05,23:23:21.726399,21.0,35.0
+--------------------------------------------------
+new_air_readings
+1,4,2024-03-06,21:11:54.999250,22.0,41.0
+2,4,2024-03-07,00:41:57.325235,22.0,41.0
+3,4,2024-03-07,00:42:20.530285,22.0,41.0
+4,4,2024-03-07,00:42:25.790834,22.0,41.0
+5,4,2024-03-06,21:25:54.277226,22.0,41.0
+6,4,2024-03-07,00:55:56.613253,22.0,39.0
+7,4,2024-03-07,00:56:07.182022,22.0,39.0
+8,4,2024-03-07,00:56:09.913074,22.0,39.0
+9,4,2024-03-07,00:57:19.742378,22.0,38.0
+10,4,2024-03-07,00:57:27.461445,22.0,39.0
+11,4,2024-03-07,00:57:30.324557,22.0,39.0
+12,4,2024-03-07,00:57:38.016719,22.0,39.0
+13,4,2024-03-07,00:57:40.882182,22.0,38.0
+14,4,2024-03-07,00:57:53.633562,22.0,38.0
+15,4,2024-03-07,00:58:01.559446,22.0,38.0
+16,4,2024-03-07,00:58:06.723785,22.0,38.0
+17,4,2024-03-07,00:58:12.121419,22.0,38.0
+18,4,2024-03-07,00:58:17.282620,23.0,38.0
+19,4,2024-03-07,00:58:22.680499,22.0,38.0
+20,4,2024-03-07,00:58:27.839290,22.0,38.0
+21,4,2024-03-07,00:58:35.768890,22.0,38.0
+22,4,2024-03-07,00:58:40.921660,22.0,38.0
+--------------------------------------------------
