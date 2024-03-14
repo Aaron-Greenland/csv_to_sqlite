@@ -123,6 +123,32 @@ def format_csv(input_file, time_index, data_index, plant_name, time_unit, data_u
     # Close the csv file
     f2.close()
 
+# Format the time column to be in the format of H/MIN/S with a max of 2 decimal places
+def format_time(csv_file):
+    with open("formatted_data/" + csv_file, 'r') as f1:
+        reader = csv.reader(f1)
+        data = list(reader)
+
+    with open("formatted_data/" + csv_file, 'w') as f2:
+        writer = csv.writer(f2)
+        # writer.writerow(['Time', 'Data', 'Plant'])
+        for i in range(len(data)):
+            time = data[i][0]
+
+            # if not the top row
+            if i != 0:
+                time = time.split(':')
+
+                # remove any characters beyond the 6th character
+                time[2] = time[2][:6]
+                # reformat the time to be in the format of H:MIN:S 
+                time = time[0] + ":" + time[1] + ":" + time[2].split('.')[0]
+
+            writer.writerow([time, data[i][1], data[i][2]])
+
+    f1.close()
+    f2.close()
+
 
         
     
@@ -135,5 +161,7 @@ parse_csv(filename_csv, tables)
 
 # test format csv on air_readings_detailed.csv
 format_csv("air_readings_detailed.csv", 2, 3, "Air_Temperature", "H/MIN/S", "Degrees C")
+
+format_time("Air_Temperature.csv")
 
 
